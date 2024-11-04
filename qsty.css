@@ -1,0 +1,272 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2E073F;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display:inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #AD49E1;
+    min-width: 138px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+    right: 0px;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Poppins", sans-serif;
+      font-weight: 100;
+      font-style: normal;
+      margin-top: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 5px;  
+      width: 65px;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the color of the dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #EBD3F8;
+    border-radius: 20px;
+}
+
+
+
+/* Header */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-right: 40px;
+    background-color: #2E073F;
+}
+
+h2 {
+    font-size: 25px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 00;
+    font-style: normal;
+}
+
+.logo img{
+    height: 60px;
+    width: 70px;
+}
+
+.logo h1 {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+      font-weight: 100px;
+      font-style: normal;
+}
+
+.profile-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.container {
+    background-color: #2E073F;
+    padding: 20px;
+    border-radius: 10px;
+    width: 900px;
+    margin-left: 300px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ffc0e0;
+}
+
+h2 {
+    background-color: #d6b5d9;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #2E073F;
+    font-family: "Poppins";
+      font-weight: 100px;
+      font-style: normal;
+    justify-content: center;
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+}
+
+button.option {
+    background-color: #d6b5d9;
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: black;
+}
+
+button.option:hover {
+    background-color: #bf92b2;
+}
+
+
+button.correct {
+    background-color: #10E833; /* Green for correct */
+}
+
+button.wrong {
+    background-color: #d50000; /* Red for wrong */
+}
+
+
+
+.result-title {
+    margin-top: 0px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    background: none;
+    color: white;
+}
+
+.result-box {
+    background-color: #EBD3F8; /* Light purple background */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.result-box p {
+    margin: 0;
+    font-size: 1.5em;
+    padding-left: 60px; /* Add padding between image and text */
+}
+
+.correct-box {
+    width: 720px;
+    margin-left: 100px;
+   
+}
+
+.incorrect-box {
+    width: 720px;
+    margin-left: 100px;
+}
+
+.correct-box img {
+    height: 124px;
+    width: 131px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.incorrect-box img {
+    height: 124px;
+    width: 134.25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.correct-box p {
+    font-family: "ADLaM Display", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    color: #2E073F; /* Green for correct answers */
+    font-size: 1.5em;
+}
+
+.incorrect-box p {
+    font-family: "ADLaM Display", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    color: #2E073F; /* Red for incorrect answers */
+    font-size: 1.5em;
+}
+
+
+.solution-container {
+    background-color: #AD49E1;
+    padding: 20px;
+    
+    border-radius: 20px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+    display: none; /* Initially hidden */
+    text-align: center;
+    width: 1000px;
+    margin-left: -60px;
+}
+
+#next-button {
+    background-color: #00c853;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#next-button:hover {
+    background-color: #00a644;
+}
+
+/* Hide options when solution is displayed */
+.hidden {
+    display: none;
+}
+

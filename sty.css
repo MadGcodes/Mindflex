@@ -1,0 +1,188 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2E073F;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-right: 40px;
+    background-color: #2E073F;
+}
+
+h2 {
+    font-size: 25px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 00;
+    font-style: normal;
+}
+
+.logo img{
+    height: 60px;
+    width: 70px;
+}
+
+.logo h1 {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+      font-weight: 100px;
+      font-style: normal;
+}
+
+.profile-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display:inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #AD49E1;
+    min-width: 138px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+    right: -10px;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Poppins", sans-serif;
+      font-weight: 100px;
+      font-style: normal;
+      margin-top: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 5px;  
+      width: 65px;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the color of the dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #EBD3F8;
+    border-radius: 20px;
+}
+
+
+/* Main content */
+main {
+    padding: 30px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.category-section h2 {
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+.cards {
+    display: flex;
+    gap: 90px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 60px;
+}
+
+.card {
+    background-color: #EBD3F8;
+    border-radius: 40px;
+    width: 260px;
+    height: 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-weight: bold;
+    color:#2E073F ;
+    flex: 1;
+    font-family: "ADLaM Display", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    height: 75px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+}
+
+.card p {
+    background-color: #AD49E1;
+    color: white;
+    display: flex;
+    width: 260px;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    border-bottom-left-radius: 40px; /* Rounded corners at the bottom */
+    border-bottom-right-radius: 40px;
+    padding-bottom: 20px;
+    padding-top: 25px;
+    font-family: "Poppins", sans-serif;
+      font-weight: 300px;
+      font-style: normal;
+}
+
+.card img { 
+    height: 25px;
+    width: 25px;
+    display:flex;
+    margin-top: -61px;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:#2E073F;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
